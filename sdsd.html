@@ -1,0 +1,115 @@
+<style>
+
+@keyframes copterKiAnimation {
+    0%{
+      right: 0px;
+      bottom: 0px;   
+    }
+
+    25%{
+        right: 0;
+        bottom: 90%;
+    }
+
+    75%{
+        bottom: 90%;
+        right: 50%;
+
+    }
+
+    100%{
+        right:50%;
+        bottom: 0px;
+    }
+    
+}
+
+
+#copter{
+    width: 100px;
+    bottom: 0px;
+    position: absolute;
+    right: 0px;
+    animation: copterKiAnimation 0.5s linear 0s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes faniANimation {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+#myFan{
+    position: absolute;
+    animation: faniANimation 1s linear 0s;
+    animation-iteration-count: infinite;
+
+}
+
+/* img{
+    filter: invert(80%);
+} */
+
+video{
+    /* filter: brightness(50%); */
+    /* filter: grayscale(70%); */
+}
+/* 
+#box{
+    width: 100px;
+    height: 100px;
+} */
+
+@keyframes abc {
+
+    0%{
+        background-color: red;
+    }
+
+    20%{
+        background-color: blue;
+    }
+
+    40%{
+        background-color: yellow;
+    }
+
+
+    60%{
+        background-color: magenta;
+    }
+
+     80%{
+        background-color: lightgreen;
+    }
+
+     100%{
+        background-color: orange;
+    }
+    
+}
+
+#box{
+    width: 400px;
+    height: 400px;
+    animation: abc 10s linear 0s;
+    animation- iteration-count: infinite;
+}
+
+</style>
+
+<!-- <img id="copter" src="copter.png" alt=""> -->
+
+<div id="box"></div>
+
+<!-- <img src="person.jpg" alt="">
+
+<img id="copter" src="copter.png" alt="">
+
+<video src="test.mp4" controls  ></video> -->
